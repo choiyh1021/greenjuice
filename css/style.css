@@ -304,18 +304,31 @@ body {
 .visual {
     position: relative;
     display: block;
+    width: 160rem;
     height: 56rem;
     overflow: hidden;
-    background: url('../images/visual_1.jpg') no-repeat center;
+    margin: 0 auto;
+}
+
+.sw-visual-pg {
+    bottom: 11rem;
+    left: 132rem;
+    width: 5.2rem;
+    height: 3.4rem;
+    line-height: 3.4rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5.2rem;
 }
 
 /* 고객정보 영역 */
 .customer {
     position: relative;
     display: block;
+    z-index: 9;
 }
 
-.customer>.container {
+.customer .container {
     background-color: #fff;
     box-shadow: 0 0.3rem 1.5rem rgb(77 77 77 / 5%);
     padding: 3rem;

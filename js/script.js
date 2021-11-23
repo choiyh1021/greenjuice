@@ -49,6 +49,19 @@ $(document).ready(function () {
     });
 
     // 배너슬라이드
+    new Swiper('.sw-banner1', {
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        effect: "fade",
+        crossEffect: {
+            crossFade: true
+        },
+        speed: 1000,
+    });
+
     new Swiper('.sw-banner2', {
         loop: true,
         autoplay: {
@@ -60,6 +73,23 @@ $(document).ready(function () {
             crossFade: true
         },
         speed: 1000,
+    });
+
+    let sw_visual = new Swiper('.sw-visual', {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        effect: "fade",
+        navigation: {
+            nextEl: ".sw-visual-next",
+            prevEl: ".sw-visual-prev",
+        },
+        pagination: {
+            el: ".sw-visual-pg",
+            type: "fraction",
+        },
     });
 
     // 펼침 목록 만들기
